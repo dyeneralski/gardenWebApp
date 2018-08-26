@@ -1,5 +1,9 @@
 ﻿<Properties StartupConfiguration="{29C0CEE3-5048-4D01-981F-12A63005B6BA}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="gardenWebApp/Views/Home/About.cshtml">
+    <Files>
+      <File FileName="gardenWebApp/Views/Home/About.cshtml" Line="7" Column="54" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
