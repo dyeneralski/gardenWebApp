@@ -50,6 +50,13 @@ namespace gardenWebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var dbContext = serviceScope.ServiceProvider.GetService<TemperatureContext>();
+                dbContext.Database.Migrate();
+                DbSeeder.Seed(dbContext);
+            }
         }
     }
 }
